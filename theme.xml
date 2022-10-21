@@ -1,0 +1,428 @@
+<theme>
+	<formatVersion>6</formatVersion>
+	<view name="system, basic, detailed, video, grid">
+		<image name="TopBar" extra="true">
+			<tile>false</tile>
+			<size>1 0.045</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./assets/top.png</path>
+			<color>7d7d7d</color>
+		</image>
+ 
+		<image name="BottomBar" extra="true">
+			<tile>false</tile>
+			<size>1 0.065</size>
+			<pos>0 1</pos>
+			<origin>0 1</origin>
+			<path>./assets/bottom.png</path>
+			<color>3082cec0</color>
+		</image>
+
+		<helpsystem name="help">
+			<textColor>FFFFFFFF</textColor>
+			<iconColor>FFFFFFFF</iconColor>
+		</helpsystem>
+	</view>
+
+	<view name="system">
+	 	<image name="background" extra="true">
+			<tile>false</tile>
+			<path>./art/background/${system.theme}.jpg</path>
+			<color>FFFFFFFF</color>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<size>1 1</size>
+			<zIndex>0</zIndex>
+		</image>
+
+		<image name="logo">
+			<path>./art/logos/${system.theme}.svg</path>
+		</image>
+
+		<!-- <image name="steelcarousel" extra="true">
+			<tile>false</tile>
+			<size>1 0.25</size>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<path>./assets/steelcarousel.png</path>
+		</image> -->
+
+		<carousel name="systemcarousel">
+			<type>horizontal</type>
+			<color>00000060</color>
+			<colorEnd>00000070</colorEnd>
+			<pos>0 0.3837</pos>
+      		<size>1 0.2325</size>
+			<logoScale>1.6</logoScale>
+			<logoSize>0.17 0.1</logoSize>
+		 </carousel>
+
+		<image name="carousel-topline" extra="true" tinyScreen="false">
+			<path>./art/white.png</path>
+			<color>8b0000</color>
+			<origin>0 0</origin>
+			<pos>0 0.3817</pos>
+			<size>1 0.005</size>
+			<zIndex>45</zIndex>
+		</image>
+
+		<image name="carousel-bottomline" extra="true" tinyScreen="false">
+			<path>./art/white.png</path>
+			<color>8b0000</color>
+			<origin>0 0</origin>
+			<pos>0 0.6101</pos>
+			<size>1 0.005</size>
+			<zIndex>45</zIndex>
+		</image>
+
+		<text name="systemInfo">
+			<pos>0 0.64</pos>
+			<size>1 0.25</size>
+			<backgroundColor>00000000</backgroundColor>
+			<color>DDDDDDD8</color>
+			<fontPath>./art/fonts/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.027</fontSize>
+		</text>
+
+		<image name="carousel-shadow" extra="true">
+			<path>./art/shadow.png</path>
+			<color>FFFFFF40</color>
+			<pos>0 0.6161</pos>
+			<origin>0 0</origin>
+			<size>1 0.025</size>
+			<zIndex>13</zIndex>
+		</image>
+
+		<image name="CenterFade" extra="true">
+			<tile>false</tile>
+			<size>1 0.5</size>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<path>./art/centerfade.png</path>
+			<color>8b000050</color>
+			<zIndex>12</zIndex>
+    	</image>
+	</view>
+
+	<view name="basic, detailed, video, grid">
+		 <image name="bottom" extra="true">
+			<pos>0 1</pos>
+			<origin>0 1</origin>
+			<size>1 0.065</size>
+			<path>./art/bottom.png</path>
+			<color>${bottomBarColor}</color>
+			<zIndex>50</zIndex>
+		</image>
+	 	<image name="background" extra="true">
+			<tile>false</tile>
+			<path>./assets/bg.png</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<zIndex>0</zIndex>
+		</image>
+
+		<image name="logo">
+			<stretch>false</stretch>
+		</image>
+	</view>
+
+	<view name="basic">
+		<image name="layout" extra="true">
+			<path>./assets/gamelist_basic.png</path>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<origin>0 0</origin>
+		</image>
+
+		<text name="logoText">
+			<text>${system.fullName}</text>
+			<alignment>center</alignment>
+			<forceUppercase>0</forceUppercase>
+			<origin>0.5 0</origin>
+			<size>0.5 0.025</size>
+			<pos>0.5 0.13</pos>
+			<color>FFFFFF</color>
+			<fontPath>./assets/SST.ttf</fontPath>
+			<fontSize>0.045</fontSize>
+		</text>
+		<image name="logo">
+			<path>./art/logos/${system.theme}.svg</path>
+			<pos>0.5 0.09</pos>
+			<maxSize>1 0.1</maxSize>
+			<origin>.5 0</origin>
+		</image>
+
+		<textlist name="gamelist">
+			<selectorColor>0f85a5</selectorColor>
+			<selectedColor>FFFFFF</selectedColor>
+			<primaryColor>FFFFFF</primaryColor>
+			<secondaryColor>FFFFFF</secondaryColor>
+			<alignment>center</alignment>
+			<fontPath>./assets/SST.ttf</fontPath>
+			<fontSize>0.03</fontSize>
+			<origin>0 0</origin>
+			<pos>0.02 0.23</pos>
+			<size>0.96 0.68</size>
+			<horizontalMargin>0</horizontalMargin>
+			<lineSpacing>1.6</lineSpacing>
+			<selectorImagePath>./assets/box.png</selectorImagePath>
+			<selectorOffsetY>0</selectorOffsetY>
+			<selectorHeight>0.047</selectorHeight>
+		</textlist> 
+	</view>
+
+	<view name="detailed, video, grid">
+		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
+			<color>FFFFFF</color>
+			<forceUppercase>1</forceUppercase>
+			<fontPath>./assets/SST.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<size>0.24 0.01</size>
+			<alignment>left</alignment>
+		</text>
+
+		<text name="md_genre, md_players, md_playcount">
+			<size>0.11 0.02</size>
+		</text>
+		
+		<text name="md_developer, md_publisher, md_genre, md_players, md_playcount, md_name">
+			<color>FFFFFF</color>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>./assets/SST.ttf</fontPath>
+			<fontSize>0.024</fontSize>
+			<lineSpacing>1</lineSpacing>
+			<alignment>left</alignment>
+		</text>
+		<datetime name="md_releasedate, md_lastplayed">
+			<color>FFFFFF</color>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>./assets/SST.ttf</fontPath>
+			<fontSize>0.024</fontSize>
+			<size>0.23 0.02</size>
+		</datetime>
+
+		<text name="md_lbl_rating">
+			<pos>0.81 0.152</pos>
+		</text>
+		<rating name="md_rating">
+			<color>ffff00</color>
+			<pos>0.89 0.14</pos>
+			<size>0.2 0.03</size>
+			<filledPath>./assets/rating_filled.svg</filledPath>
+			<unfilledPath>./assets/rating_unfilled.svg</unfilledPath>
+		</rating>
+
+		<text name="md_lbl_players">
+			<pos>0.81 0.212</pos>
+		</text>
+		<text name="md_players">
+			<pos>0.895 0.206</pos>
+		</text>
+
+		<text name="md_lbl_genre">
+			<pos>0.81 0.272</pos>
+		</text>
+		<text name="md_genre">
+			<pos>0.895 0.267</pos>
+		</text>
+
+		<text name="md_lbl_releasedate">
+			<pos>0.81 0.332</pos>
+		</text>
+		<datetime name="md_releasedate">
+			<pos>0.895 0.3275</pos>
+		</datetime>
+
+		<text name="md_lbl_playcount">
+			<pos>0.81 0.392</pos>
+		</text>
+		<text name="md_playcount">
+			<pos>0.895 0.385</pos>
+		</text>
+
+		<text name="md_lbl_lastplayed">
+			<pos>0.81 0.452</pos>
+		</text>
+		<datetime name="md_lastplayed">
+			<pos>0.895 0.447</pos>
+		</datetime>
+	</view>
+	
+	<view name="detailed, video">
+		<image name="layout" extra="true">
+			<path>./assets/gamelist.png</path>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<origin>0 0</origin>
+		</image>
+
+		<text name="logoText">
+			<text>${system.fullName}</text>
+			<alignment>left</alignment>
+			<forceUppercase>0</forceUppercase>
+			<size>0.5 0.025</size>
+			<pos>0.02 0.13</pos>
+			<color>FFFFFF</color>
+			<fontPath>./assets/SST.ttf</fontPath>
+			<fontSize>0.045</fontSize>
+		</text>
+		<image name="logo">
+			<path>./art/logos/${system.theme}.svg</path>
+			<pos>0.02 0.09</pos>
+			<maxSize>0.3 0.1</maxSize>
+			<origin>0 0</origin>
+		</image>
+
+		<textlist name="gamelist">
+			<selectorColor>0f85a5</selectorColor>
+			<selectedColor>FFFFFF</selectedColor>
+			<primaryColor>FFFFFF</primaryColor>
+			<secondaryColor>FFFFFF</secondaryColor>
+			<alignment>left</alignment>
+			<fontPath>./assets/SST.ttf</fontPath>
+			<fontSize>0.028</fontSize>
+			<origin>0 0</origin>
+			<pos>0.02 0.23</pos>
+			<size>0.47 0.64</size>
+			<horizontalMargin>0.01</horizontalMargin>
+			<lineSpacing>2.27</lineSpacing>
+			<selectorImagePath>./assets/box.png</selectorImagePath>
+			<selectorOffsetY>-0.01</selectorOffsetY>
+			<selectorHeight>0.062</selectorHeight>
+		</textlist> 
+
+		<image name="md_thumbnail">
+			<pos>2 2</pos>
+			<maxSize>0 0</maxSize>
+			<visible>false</visible>
+		</image> 
+
+		<image name="md_image">
+			<pos>0.65 0.3</pos>
+			<maxSize>0.3 0.4</maxSize>
+			<default>./assets/no_boxart.svg</default>
+		</image> 
+
+		<text name="md_description">
+			<pos>0.5 0.62</pos>
+			<size>0.48 0.266</size>
+			<color>FFFFFF</color>
+			<fontSize>0.025</fontSize>
+			<fontPath>./assets/noto.ttf</fontPath>
+		</text>
+
+		<text name="md_developer, md_publisher">
+			<size>0.42 0.02</size>
+		</text>
+
+		<text name="md_lbl_developer">
+			<pos>0.5 0.523</pos>
+		</text>
+		<text name="md_developer">
+			<pos>0.58 0.518</pos>
+		</text>
+
+		<text name="md_lbl_publisher">
+			<pos>0.5 0.568</pos>
+		</text>
+		<text name="md_publisher">
+			<pos>0.58 0.563</pos>
+		</text>
+	</view>
+
+	<view name="video">
+		<video name="md_video">
+			<pos>0.65 0.3</pos>
+			<maxSize>0.3 0.4</maxSize>
+			<delay>0.75</delay>
+			<default></default>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+		</video>
+	</view>
+
+	<view name="grid">
+		<text name="logoText">
+			<text>${system.fullName}</text>
+			<alignment>left</alignment>
+			<forceUppercase>0</forceUppercase>
+			<size>0.5 0.025</size>
+			<pos>0.81 0.08</pos>
+			<color>FFFFFF</color>
+			<fontPath>./assets/SST.ttf</fontPath>
+			<fontSize>0.045</fontSize>
+		</text>
+		<image name="logo">
+			<path>./art/logos/${system.theme}.svg</path>
+			<pos>0.893 0.095</pos>
+			<maxSize>0.165 0.06</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+		
+		<image name="layout" extra="true">
+			<path>./assets/gamegrid.png</path>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<origin>0 0</origin>
+		</image>
+
+		<text name="md_name">
+			<pos>0.02 0.89</pos>
+			<fontSize>0.036</fontSize>
+			<size>0.77 0.02</size>
+			<alignment>right</alignment>
+		</text>
+		
+		<text name="md_developer, md_publisher">
+			<size>0.15 0.0835</size>
+		</text>
+		
+		<text name="md_lbl_developer">
+			<pos>0.81 0.52</pos>
+		</text>
+		<text name="md_developer">
+			<pos>0.82 0.515</pos>
+		</text>
+
+		<text name="md_lbl_publisher">
+			<pos>0.81 0.588</pos>
+		</text>
+		<text name="md_publisher">
+			<pos>0.82 0.585</pos>
+		</text>
+
+		<text name="md_description">
+			<pos>0.81 0.67</pos>
+			<size>0.18 0.248</size>
+			<color>FFFFFF</color>
+			<fontSize>0.02</fontSize>
+			<fontPath>./assets/noto.ttf</fontPath>
+		</text>
+
+		<imagegrid name="gamegrid">
+			<pos>0.02 0.07</pos>
+			<size>0.77 0.8</size>
+			<margin>0.02 0.02</margin>
+			<autoLayout>6 4</autoLayout>
+			<animate>true</animate>
+			<gameImage>./art/cartridges/${system.theme}.png</gameImage>
+			<scrollDirection>vertically</scrollDirection>
+			<centerSelection>false</centerSelection>
+			<scrollLoop>false</scrollLoop>
+		</imagegrid>
+		<gridtile name="default">
+			<backgroundColor>FFFFFF00</backgroundColor>
+			<backgroundCornerSize>9 9</backgroundCornerSize>
+			<padding>9 9</padding>
+			<textColor>FFFFFFFF</textColor>
+			<imageColor>FFFFFF90</imageColor>
+		</gridtile>
+		<gridtile name="selected">
+			<backgroundColor>3082cec0</backgroundColor>
+			<textColor>FFFFFFFF</textColor>
+			<imageColor>FFFFFFFF</imageColor>
+		</gridtile>
+	</view>
+</theme>
