@@ -44,37 +44,39 @@
 			<zIndex>12</zIndex>
 		</image>
 
-		<!-- <text name="manufacturerName" extra="true">
-			<text>${system.sortedBy}</text>
+
+		<!-- These fields aren't variables yet (except {$system.fullName})
+		<text name="manufacturerName" extra="true">
+			<text>Nintendo</text>
 			<alignment>left</alignment>
 			<fontPath>./art/fonts/Cabin-Regular.ttf</fontPath>
 			<fontSize>0.060</fontSize>
-			<pos>0.029 0.037</pos>
-			<size>0.942 0.28</size>
-			<color>C0C0C0</color>      
+			<pos>0.029 0</pos>
+			<size>0.94 0.2</size>  
 			<zIndex>100</zIndex>
 			<color>D0D0D0FF</color>
 		</text>
 		<text name="fullName" extra="true">
-			<text>${system.fullName}</text>
+			<text>{$system.fullName}</text>
 			<alignment>left</alignment>
 			<fontPath>./art/fonts/Cabin-Regular.ttf</fontPath>
 			<fontSize>0.024</fontSize>
-			<pos>0.03 0.12</pos>      
+			<pos>0.03 0.02</pos>      
 			<size>0.94 0.28</size>
 			<zIndex>100</zIndex>
 			<color>D0D0D0FF</color>
 		</text>
 		<text name="releaseYear" extra="true">
-			<text>${system.releaseYear}</text>
+			<text>1983</text>
 			<alignment>left</alignment>
 			<fontPath>./art/fonts/Cabin-Regular.ttf</fontPath>
 			<fontSize>0.024</fontSize>
-			<pos>0.03 0.157</pos>      
+			<pos>0.03 0.06</pos>      
 			<size>0.94 0.28</size>        
 			<zIndex>100</zIndex>
 			<color>D0D0D0FF</color>
-		</text>  -->
+		</text>
+		-->
 
 		<text name="logoText">
 			<fontPath>./art/fonts/Cabin-Bold.ttf</fontPath>
