@@ -21,6 +21,17 @@
 		<helpsystem name="help">
 			<textColor>FFFFFFFF</textColor>
 			<iconColor>FFFFFFFF</iconColor>
+			<iconUpDown>./iconset/updown.png</iconUpDown>
+            <iconLeftRight>./iconset/leftright.png</iconLeftRight>
+            <iconUpDownLeftRight>./iconset/all.png</iconUpDownLeftRight>
+            <iconA>./iconset/a_button.svg</iconA>
+            <iconB>./iconset/b_button.svg</iconB>
+            <iconX>./iconset/x_button.svg</iconX>
+            <iconY>./iconset/y_button.svg</iconY>
+            <iconL>./iconset/z_button.svg</iconL>
+            <iconR>./iconset/c_button.svg</iconR>
+            <iconStart>./iconset/p1_button.svg</iconStart>
+            <iconSelect>./iconset/rewind_button.svg</iconSelect>
 		</helpsystem>
 	</view>
 
@@ -44,10 +55,8 @@
 			<zIndex>12</zIndex>
 		</image>
 
-
-		<!-- These fields aren't variables yet (except {$system.fullName})
 		<text name="manufacturerName" extra="true">
-			<text>Nintendo</text>
+			<text>${system.manufacturerName}</text>
 			<alignment>left</alignment>
 			<fontPath>./art/fonts/Cabin-Regular.ttf</fontPath>
 			<fontSize>0.060</fontSize>
@@ -57,7 +66,7 @@
 			<color>D0D0D0FF</color>
 		</text>
 		<text name="fullName" extra="true">
-			<text>{$system.fullName}</text>
+			<text>${system.fullName}</text>
 			<alignment>left</alignment>
 			<fontPath>./art/fonts/Cabin-Regular.ttf</fontPath>
 			<fontSize>0.024</fontSize>
@@ -66,8 +75,8 @@
 			<zIndex>100</zIndex>
 			<color>D0D0D0FF</color>
 		</text>
-		<text name="releaseYear" extra="true">
-			<text>1983</text>
+		<text name="releaseDate" extra="true">
+			<text>${system.releaseDate}</text>
 			<alignment>left</alignment>
 			<fontPath>./art/fonts/Cabin-Regular.ttf</fontPath>
 			<fontSize>0.024</fontSize>
@@ -76,7 +85,6 @@
 			<zIndex>100</zIndex>
 			<color>D0D0D0FF</color>
 		</text>
-		-->
 
 		<text name="logoText">
 			<fontPath>./art/fonts/Cabin-Bold.ttf</fontPath>
