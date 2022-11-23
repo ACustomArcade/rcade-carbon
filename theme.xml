@@ -21,9 +21,9 @@
 		<helpsystem name="help">
 			<textColor>FFFFFFFF</textColor>
 			<iconColor>FFFFFFFF</iconColor>
-			<iconUpDown>./iconset/updown.png</iconUpDown>
-            <iconLeftRight>./iconset/leftright.png</iconLeftRight>
-            <iconUpDownLeftRight>./iconset/all.png</iconUpDownLeftRight>
+			<iconUpDown>./iconset/joystick_updown.svg</iconUpDown>
+            <iconLeftRight>./iconset/joystick_leftright.svg</iconLeftRight>
+            <iconUpDownLeftRight>./iconset/joystick_all.svg</iconUpDownLeftRight>
             <iconA>./iconset/a_button.svg</iconA>
             <iconB>./iconset/b_button.svg</iconB>
             <iconX>./iconset/x_button.svg</iconX>
