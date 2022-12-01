@@ -18,20 +18,26 @@
 			<color>295d84c0</color>
 			<zIndex>50</zIndex>
 		</image>
-		<helpsystem name="help">
-			<textColor>FFFFFFFF</textColor>
-			<iconColor>FFFFFFFF</iconColor>
-			<iconUpDown>./iconset/joystick_updown.svg</iconUpDown>
-            <iconLeftRight>./iconset/joystick_leftright.svg</iconLeftRight>
-            <iconUpDownLeftRight>./iconset/joystick_all.svg</iconUpDownLeftRight>
-            <iconA>./iconset/a_button.svg</iconA>
-            <iconB>./iconset/b_button.svg</iconB>
-            <iconX>./iconset/x_button.svg</iconX>
-            <iconY>./iconset/y_button.svg</iconY>
-            <iconL>./iconset/z_button.svg</iconL>
-            <iconR>./iconset/c_button.svg</iconR>
-            <iconStart>./iconset/p1_button.svg</iconStart>
-            <iconSelect>./iconset/rewind_button.svg</iconSelect>
+		<helpsystem name="help" boardModels="rk3328-ha8801">
+				<textColor>FFFFFFFF</textColor>
+				<iconColor>FFFFFFFF</iconColor>
+				<iconUpDown>./iconset/joystick_updown.svg</iconUpDown>
+				<iconLeftRight>./iconset/joystick_leftright.svg</iconLeftRight>
+				<iconUpDownLeftRight>./iconset/joystick_all.svg</iconUpDownLeftRight>
+				<iconA>./iconset/a_button.svg</iconA>
+				<iconB>./iconset/b_button.svg</iconB>
+				<iconX>./iconset/y_button.svg</iconX>
+				<iconY>./iconset/x_button.svg</iconY>
+				<iconStart>./iconset/p1_button.svg</iconStart>
+				<iconSelect>./iconset/rewind_button.svg</iconSelect>
+		</helpsystem>
+		<helpsystem name="help" boardModels="rk3328-ha8801" serialNos="8800*, 8801*, 8810*, 8819*">
+				<iconL>./iconset/c_button.svg</iconL>
+				<iconR>./iconset/z_button.svg</iconR>
+		</helpsystem>
+		<helpsystem name="help" boardModels="rk3328-ha8801" serialNos="2810*, 2811*, 2812*, B800*">
+				<iconL>./iconset/l1_button.svg</iconL>
+				<iconR>./iconset/r1_button.svg</iconR>
 		</helpsystem>
 	</view>
 
